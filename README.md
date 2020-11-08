@@ -6,7 +6,7 @@ Tang-Nano FPGAボードで動作するテトリスゲームを実装してみま
 Tang-NanoにSNESコントローラと音声出力用のLPFを接続します。  
 ![Schematic](doc/img/Schematic.png "Schematic")
 
-# FPGA内部ブロック図
+## FPGA内部ブロック図
 超雑で申し訳ありません。肝心のtetris.vはソースコードを見たほうが早いです。  
 （よくわからんが、まぁ動いている（稀にテトリミノが壁に刺さるバグあり）からヨシ！）  
 <img src="doc/img/BlockDiagram.png" width="500">  
