@@ -13,6 +13,7 @@ Tang-NanoにSNESコントローラと音声出力用のLPFを接続します。
 
 ## フィールド
 フィールドサイズは外枠を含めて、横12 x 縦22ブロックとしました。Wikipediaに記載のある図が由来です。  
+Tetris - Wikipedia https://en.wikipedia.org/wiki/Tetris  
 ![Field](doc/img/Field.png "Field")
 
 ## ブロック
