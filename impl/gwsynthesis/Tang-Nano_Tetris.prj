@@ -1,0 +1,22 @@
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>Beta</Version>
+    <Device id="GW1N-1" package="QFN48" speed="6"/>
+    <FileList>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\LCD_Controller.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\top.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_pll\gowin_pll.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\snes_if.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\char_ROM.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\tetris.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\noteNumTable.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v"/>
+        <File type="verilog"  path="D:\Documents\GitHub\Tang-Nano_Tetris\src\bgm_ROM.v"/>
+    </FileList>
+    <OptionList>
+        <Option type="top_module"  value="tetris_top"/>
+        <Option type="verilog_language"  value="verilog-2001"/>
+        <Option type="output_file"  value="D:\Documents\GitHub\Tang-Nano_Tetris\impl\gwsynthesis\Tang-Nano_Tetris.vg"/>
+    </OptionList>
+</Project>

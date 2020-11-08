@@ -1,0 +1,9 @@
+.vscode/
+*.user
+gwsynthesis/*
+!gwsynthesis/*.cfg
+impl/pnr/*
+!impl/pnr/*.cfg
+!impl/pnr/*.fs
+impl/synthesize/*
+!impl/synthesize/*.cfg

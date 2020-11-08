@@ -1,0 +1,4 @@
+-p GW1N-1-QFN48-6
+-i D:\Documents\GitHub\Tang-Nano_Tetris\src\LCD_Controller.v D:\Documents\GitHub\Tang-Nano_Tetris\src\top.v D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_pll\gowin_pll.v D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v D:\Documents\GitHub\Tang-Nano_Tetris\src\snes_if.v D:\Documents\GitHub\Tang-Nano_Tetris\src\char_ROM.v D:\Documents\GitHub\Tang-Nano_Tetris\src\tetris.v D:\Documents\GitHub\Tang-Nano_Tetris\src\noteNumTable.v D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v D:\Documents\GitHub\Tang-Nano_Tetris\src\bgm_ROM.v
+-top_module tetris_top
+-verilog_language verilog-2001

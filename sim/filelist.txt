@@ -1,0 +1,13 @@
+./rtl/tb_top.v
+./rtl/ip/prim_sim.v
+../src/ip/gowin_dp/gowin_dp.v
+../src/ip/gowin_pll/gowin_pll.v
+
+../src/top.v
+../src/LCD_Controller.v
+../src/snes_if.v
+../src/tetris.v
+../src/char_ROM.v
+../src/soundGen.v
+../src/bgm_ROM.v
+../src/noteNumTable.v

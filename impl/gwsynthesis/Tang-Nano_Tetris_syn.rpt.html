@@ -1,0 +1,2696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#setting" style=" font-size: 16px;">Design Settings</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#timing report" style=" font-size: 14px;">Timing Report</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Performance Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+<li><a href="#message" style=" font-size: 16px;">Message</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Summary</a></li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>D:/Documents/GitHub/Tang-Nano_Tetris/src/LCD_Controller.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/top.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/ip/gowin_pll/gowin_pll.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/ip/gowin_dp/gowin_dp.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/snes_if.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/char_ROM.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/tetris.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/noteNumTable.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/soundGen.v<br>
+D:/Documents/GitHub/Tang-Nano_Tetris/src/bgm_ROM.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Verision</td>
+<td>GowinSynthesis V1.9.2.02Beta</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Nov 08 22:23:03 2020
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2019 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="setting">Design Settings</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module:</td>
+<td>tetris_top</td>
+</tr>
+<tr>
+<td class="label">Design Language:</td>
+<td>verilog</td>
+</tr>
+<tr>
+<td class="label">Series:</td>
+<td>GW1N</td>
+</tr>
+<tr>
+<td class="label">Device:</td>
+<td>GW1N-1</td>
+</tr>
+<tr>
+<td class="label">Package:</td>
+<td>QFN48</td>
+</tr>
+<tr>
+<td class="label">Speed Grade:</td>
+<td>6</td>
+</tr>
+</table><br/>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>IOPORT Usage:</b></td>
+<td>27</td>
+</tr>
+<tr>
+<td class="label"><b>IOBUF Usage:</b></td>
+<td>26</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label"><b>REG Usage:</b></td>
+<td>474</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFE</td>
+<td>49</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFP</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFC</td>
+<td>131</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>273</td>
+</tr>
+<tr>
+<td class="label"><b>LUT Usage:</b></td>
+<td>806</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>133</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>184</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>489</td>
+</tr>
+<tr>
+<td class="label"><b>ALU Usage:</b></td>
+<td>126</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>126</td>
+</tr>
+<tr>
+<td class="label"><b>INV Usage:</b></td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>16</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM Usage:</b></td>
+<td>4</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDP</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprROM</td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsprROMX9</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK Usage:</b></td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLL</td>
+<td>1</td>
+</tr>
+</table><br/>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+Target Device: GW1N-1-QFN48
+<table class="summary_table">
+<tr>
+<td class="label">CFU Logics</td>
+<td>948(822 LUTs, 126 ALUs) / 1152</td>
+<td>82%</td>
+</tr>
+<tr>
+<td class="label">Registers</td>
+<td>474 / 945</td>
+<td>50%</td>
+</tr>
+<tr>
+<td class="label">BSRAMs</td>
+<td>4 / 4</td>
+<td>100%</td>
+</tr>
+<tr>
+<td class="label">DSP Macros</td>
+<td>0 / (0*2)</td>
+<td> - </td>
+</tr>
+</table><br/><br/>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>Clock</th>
+<th>Type</th>
+<th>Frequency</th>
+<th>Period</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKIN.default_clk</td>
+<td>Base</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\pll/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKOUTP.default_gen_clk</td>
+<td>Generated</td>
+<td>100.0 MHz</td>
+<td>10.000</td>
+<td>0.000</td>
+<td>5.000</td>
+<td> </td>
+<td>\pll/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKOUTD.default_gen_clk</td>
+<td>Generated</td>
+<td>50.0 MHz</td>
+<td>20.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td>\pll/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKOUTD3.default_gen_clk</td>
+<td>Generated</td>
+<td>33.3 MHz</td>
+<td>30.000</td>
+<td>0.000</td>
+<td>15.000</td>
+<td> </td>
+<td>\pll/pll_inst /CLKIN.default_clk</td>
+<td> </td>
+</tr>
+</table><br/>
+<h2><a name="timing report">Timing Report:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Top View:</td>
+<td>tetris_top</td>
+</tr>
+<tr>
+<td class="label">Requested Frequency:</td>
+<td>33.3 MHz</td>
+</tr>
+<tr>
+<td class="label">Paths Requested:</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">Constraint File(ignored):</td>
+<td></td>
+</tr>
+</table>
+<b>All time values displayed in nanoseconds(ns).</b><br/><br/>
+<h2><a name="performance">Performance Summary:</a></h2>
+Worst Slack in Design:&nbsp-7.491<br/>
+<table class="summary_table">
+<tr>
+<th>Start Clock</th>
+<th>Slack</th>
+<th>Requested Frequency</th>
+<th>Estimated Frequency</th>
+<th>Requested Period</th>
+<th>Estimated Period</th>
+<th>Clock Type</th>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk</td>
+<td>-7.491</td>
+<td>100.0 MHz</td>
+<td>57.2 MHz</td>
+<td>10.000</td>
+<td>17.491</td>
+<td>Generated</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+</table><br/>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<b>Path information for path number&nbsp</b>1&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(critical):</td>
+<td>-7.491</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>17.610</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>10.120</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>pll/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>tetris_inst/r_atari_r_l_tmp_ins25342</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins2</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>480</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.458</td>
+<td>0.821</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>14</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>1.301</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>2.400</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.880</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>3.979</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_23</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>4.459</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>5.558</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>7</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins28216</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>6.038</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins28216</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>7.137</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27971</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.617</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27971</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>8.716</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_l_ins27541</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>9.196</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_l_ins27541</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>10.295</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_l</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3365_ins27499</td>
+<td>MUX2_LUT5</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>10.775</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3365_ins27499</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>10.924</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3365</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3366_ins27511</td>
+<td>MUX2_LUT6</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>11.404</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3366_ins27511</td>
+<td>MUX2_LUT6</td>
+<td>O</td>
+<td>Out</td>
+<td>0.163</td>
+<td>11.567</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3366</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3367_ins27952</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>12.047</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3367_ins27952</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.822</td>
+<td>12.869</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3367</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3368_ins27526</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>13.349</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3368_ins27526</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>13.498</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3368</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3369_ins27551</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>13.978</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3369_ins27551</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>15.077</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3369</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_sel_l_ins27433</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>15.557</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_l_ins27433</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>15.706</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_l</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>r_atari_r_l_tmp_ins27642</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>16.186</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_r_l_tmp_ins27642</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.061</td>
+<td>17.247</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_r_l_tmp_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>r_atari_r_l_tmp_ins25342</td>
+<td>DFFCE</td>
+<td>CE</td>
+<td>In</td>
+<td>-</td>
+<td>17.610</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>17.610<br/>
+<b>Logic Delay: </b>10.644(60.4%)<br/>
+<b>Route Delay: </b>6.966(39.6%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>2&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>-7.424</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>17.543</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>10.120</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>pll/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>tetris_inst/r_atari_r_r_tmp_ins25339</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins2</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>480</td>
+</tr>
+<tr>
+<td>\r_block_pos_y[1]_ins24901 </td>
+<td>DFFCE</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_y[1]_ins24901 </td>
+<td>DFFCE</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.458</td>
+<td>0.821</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_y[1] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>13</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_ins28314</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>1.301</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_ins28314</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>2.400</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_27</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_ins28205</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.880</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_ins28205</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>3.979</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_J_1_11</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>n2266_ins28211</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>4.459</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n2266_ins28211</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>5.558</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n2266_15</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>n2266_ins27965</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>6.038</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n2266_ins27965</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.032</td>
+<td>7.070</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n2266_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>7</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27972</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.550</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27972</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>8.649</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_7</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27540</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>9.129</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r_ins27540</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>10.228</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_r</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3342_ins27495</td>
+<td>MUX2_LUT5</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>10.708</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3342_ins27495</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>10.857</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3342</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3343_ins27510</td>
+<td>MUX2_LUT6</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>11.337</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3343_ins27510</td>
+<td>MUX2_LUT6</td>
+<td>O</td>
+<td>Out</td>
+<td>0.163</td>
+<td>11.500</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3343</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3344_ins27951</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>11.980</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3344_ins27951</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.822</td>
+<td>12.802</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3344</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3345_ins27525</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>13.282</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3345_ins27525</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>13.431</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3345</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3346_ins27550</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>13.911</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3346_ins27550</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>15.010</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3346</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_sel_r_ins27432</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>15.490</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_r_ins27432</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>15.639</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_r</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>r_atari_r_r_tmp_ins27641</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>16.119</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_r_r_tmp_ins27641</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.061</td>
+<td>17.180</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_r_r_tmp_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>r_atari_r_r_tmp_ins25339</td>
+<td>DFFCE</td>
+<td>CE</td>
+<td>In</td>
+<td>-</td>
+<td>17.543</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>17.543<br/>
+<b>Logic Delay: </b>10.577(60.3%)<br/>
+<b>Route Delay: </b>6.966(39.7%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>3&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>-7.165</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>17.284</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>10.120</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>pll/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>tetris_inst/r_atari_l_n_tmp_ins25327</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins2</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>480</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.458</td>
+<td>0.821</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>14</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>1.301</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>2.400</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.880</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>3.979</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_23</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>4.459</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>5.558</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>7</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>6.038</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>7.137</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.617</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>8.716</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>9.196</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.032</td>
+<td>10.228</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>10.708</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>10.857</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>11.337</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>O</td>
+<td>Out</td>
+<td>0.163</td>
+<td>11.500</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>11.980</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.822</td>
+<td>12.802</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>13.282</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>13.431</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>13.911</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>15.010</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>15.490</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>15.639</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>r_atari_l_n_tmp_ins27637</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>16.119</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_l_n_tmp_ins27637</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.802</td>
+<td>16.921</td>
+<td>-</td>
+</tr>
+<tr>
+<td>r_atari_l_n_tmp_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>r_atari_l_n_tmp_ins25327</td>
+<td>DFFCE</td>
+<td>CE</td>
+<td>In</td>
+<td>-</td>
+<td>17.284</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>17.284<br/>
+<b>Logic Delay: </b>10.318(59.7%)<br/>
+<b>Route Delay: </b>6.966(40.3%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>4&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>-6.356</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>16.119</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.763</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>pll/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>tetris_inst/r_wen_ins24922</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins2</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>480</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.458</td>
+<td>0.821</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>14</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>1.301</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>2.400</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.880</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>3.979</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_23</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>4.459</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>5.558</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>7</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>6.038</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>7.137</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.617</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>8.716</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>9.196</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.032</td>
+<td>10.228</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>10.708</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>10.857</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>11.337</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>O</td>
+<td>Out</td>
+<td>0.163</td>
+<td>11.500</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>11.980</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.822</td>
+<td>12.802</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>13.282</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>13.431</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>13.911</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>15.010</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>15.490</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>15.639</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>r_wen_ins24922</td>
+<td>DFFE</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>16.119</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>16.119<br/>
+<b>Logic Delay: </b>9.516(59.0%)<br/>
+<b>Route Delay: </b>6.603(41.0%)<br/>
+<br/><br/>
+<b>Path information for path number&nbsp</b>5&nbsp:&nbsp<br/>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>10.000</td>
+</tr>
+<tr>
+<td class="label">    Slack(non-critical):</td>
+<td>-6.356</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time:</td>
+<td>16.119</td>
+</tr>
+<tr>
+<td class="label">Data Required Time:</td>
+<td>9.763</td>
+</tr>
+<tr>
+<td class="label">Number of Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Starting Point:</td>
+<td>pll/pll_inst</td>
+</tr>
+<tr>
+<td class="label">Ending Point:</td>
+<td>tetris_inst/r_blocken_sel_ff_n_ins24856</td>
+</tr>
+<tr>
+<td class="label">The Start Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+<tr>
+<td class="label">The End Point Is Clocked By:</td>
+<td>\pll/pll_inst /CLKOUT.default_gen_clk[rising]</td>
+</tr>
+</table><br/><br/>
+<table class="summary_table">
+<tr>
+<th>Instance/Net Name</th>
+<th>Type</th>
+<th>Pin Name</th>
+<th>Pin Dir</th>
+<th>Delay</th>
+<th>Arrival Time</th>
+<th>Fanout</th>
+</tr>
+<tr>
+<td>pll_inst_ins2</td>
+<td>PLL</td>
+<td>CLKOUT</td>
+<td>Out</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>-</td>
+</tr>
+<tr>
+<td>clkout</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+<td>480</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>CLK</td>
+<td>In</td>
+<td>-</td>
+<td>0.363</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1]_ins24891 </td>
+<td>DFFPE</td>
+<td>Q</td>
+<td>Out</td>
+<td>0.458</td>
+<td>0.821</td>
+<td>-</td>
+</tr>
+<tr>
+<td>\r_block_pos_x[1] </td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>14</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>1.301</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_ins27987</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>2.400</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n4119_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>2.880</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28306</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>3.979</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_23</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>4.459</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_ins28201</td>
+<td>LUT2</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>5.558</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_I_n_13</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>7</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>6.038</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins28214</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>7.137</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_9</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>7.617</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27969</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>8.716</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_5</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>9.196</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n_ins27539</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>1.032</td>
+<td>10.228</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_L_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>10.708</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319_ins27491</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>10.857</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3319</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>11.337</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320_ins27509</td>
+<td>MUX2_LUT6</td>
+<td>O</td>
+<td>Out</td>
+<td>0.163</td>
+<td>11.500</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3320</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>I2</td>
+<td>In</td>
+<td>-</td>
+<td>11.980</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321_ins27950</td>
+<td>LUT4</td>
+<td>F</td>
+<td>Out</td>
+<td>0.822</td>
+<td>12.802</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3321</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>13.282</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322_ins27524</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>13.431</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3322</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>I1</td>
+<td>In</td>
+<td>-</td>
+<td>13.911</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323_ins27549</td>
+<td>LUT3</td>
+<td>F</td>
+<td>Out</td>
+<td>1.099</td>
+<td>15.010</td>
+<td>-</td>
+</tr>
+<tr>
+<td>n3323</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>I0</td>
+<td>In</td>
+<td>-</td>
+<td>15.490</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n_ins27431</td>
+<td>MUX2_LUT5</td>
+<td>O</td>
+<td>Out</td>
+<td>0.149</td>
+<td>15.639</td>
+<td>-</td>
+</tr>
+<tr>
+<td>w_blocken_sel_n</td>
+<td>Net</td>
+<td>-</td>
+<td>-</td>
+<td>0.480</td>
+<td>-</td>
+<td>3</td>
+</tr>
+<tr>
+<td>r_blocken_sel_ff_n_ins24856</td>
+<td>DFFE</td>
+<td>D</td>
+<td>In</td>
+<td>-</td>
+<td>16.119</td>
+<td>-</td>
+</tr>
+</table><br/>
+<b>Total Path Delay: </b>16.119<br/>
+<b>Logic Delay: </b>9.516(59.0%)<br/>
+<b>Route Delay: </b>6.603(41.0%)<br/>
+<br/><br/>
+<h1><a name="message">Message</a></h1>
+<big>Info    (EXT0100) : Run analyzation & elaboration</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\LCD_Controller.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\top.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_pll\gowin_pll.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\snes_if.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\char_ROM.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\tetris.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\noteNumTable.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v'</big><br/>
+<big>Info    (EXT1482) : Analyzing Verilog file 'D:\Documents\GitHub\Tang-Nano_Tetris\src\bgm_ROM.v'</big><br/>
+<big>Info    (EXT1018) : Compiling module 'tetris_top'(D:\Documents\GitHub\Tang-Nano_Tetris\src\top.v:6)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'Gowin_PLL'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_pll\gowin_pll.v:8)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'snes_if'(D:\Documents\GitHub\Tang-Nano_Tetris\src\snes_if.v:20)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'tetris'(D:\Documents\GitHub\Tang-Nano_Tetris\src\tetris.v:6)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'Gowin_DP'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v:8)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 4 differs from formal bit length 16 for port 'DOA'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v:32)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 4 differs from formal bit length 16 for port 'DOB'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v:33)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 4 differs from formal bit length 16 for port 'DIA'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v:46)</big><br/>
+<big>Warning (EXT1330) : Actual bit length 4 differs from formal bit length 16 for port 'DIB'(D:\Documents\GitHub\Tang-Nano_Tetris\src\ip\gowin_dp\gowin_dp.v:48)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'LCD_Controller'(D:\Documents\GitHub\Tang-Nano_Tetris\src\LCD_Controller.v:6)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'char_rom'(D:\Documents\GitHub\Tang-Nano_Tetris\src\char_ROM.v:6)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'soundGen'(D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v:6)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'bgm_rom'(D:\Documents\GitHub\Tang-Nano_Tetris\src\bgm_ROM.v:9)</big><br/>
+<big>Info    (EXT1018) : Compiling module 'noteNum_table'(D:\Documents\GitHub\Tang-Nano_Tetris\src\noteNumTable.v:6)</big><br/>
+<big>Warning (EXT1209) : Expression size 32 truncated to fit in target size 6(D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v:174)</big><br/>
+<big>Warning (EXT1209) : Expression size 32 truncated to fit in target size 6(D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v:179)</big><br/>
+<big>Warning (EXT1209) : Expression size 32 truncated to fit in target size 6(D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v:180)</big><br/>
+<big>Warning (EXT1209) : Expression size 11 truncated to fit in target size 8(D:\Documents\GitHub\Tang-Nano_Tetris\src\soundGen.v:181)</big><br/>
+<big>Info    (EXT0101) : Current top module is "tetris_top"</big><br/>
+<big>Info    (CVT0001) : Run conversion</big><br/>
+<big>Warning (CVT0011) : Input "btn_b" is unused(D:\Documents\GitHub\Tang-Nano_Tetris\src\top.v:12)</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (DIO0006) : Register and gate optimizing before inferencing</big><br/>
+<big>Info    (DSP0001) : DSP inferencing</big><br/>
+<big>Info    (RAM0001) : RAM inferencing</big><br/>
+<big>Info    (ATO0001) : Adder tree reduction</big><br/>
+<big>Info    (ATO0002) : Rebuild ALU instances from adder tree nodes</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (DIO0007) : Register and gate optimizing before mapping</big><br/>
+<big>Info    (MAP0001) : Run tech-mapping</big><br/>
+<big>Info    (MAP0003) : Run logic optimization</big><br/>
+<big>Info    (DIO0001) : Run device independent optimization</big><br/>
+<big>Info    (SYN0009) : Write post-map netlist to file: D:\Documents\GitHub\Tang-Nano_Tetris\impl\gwsynthesis\Tang-Nano_Tetris.vg</big><br/>
+<br/>
+<h1><a name="summary">Summary</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Total Errors:</b></td> 
+<td>0</td>
+</tr>
+<tr>
+<td class="label"><b>Total Warnings:</b></td> 
+<td>9</td>
+</tr>
+<tr>
+<td class="label"><b>Total Informations:</b></td> 
+<td>35</td>
+</tr>
+</table><br/>
+<b>Synthesis completed successfully!</b><br/>
+Process took 0h:0m:15s realtime, 0h:0m:10s cputime
+<br/>
+Memory peak: 95.9MB
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

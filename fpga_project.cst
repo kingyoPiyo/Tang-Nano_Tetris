@@ -1,0 +1,62 @@
+//Copyright (C)2014-2019 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: V1.9.2.02Beta
+//Part Number: GW1N-LV1QN48C6/I5
+//Created Time: Thu 01 23 01:38:06 2020
+
+IO_LOC "btn_b" 14;
+IO_PORT "btn_b" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_LOC "mco" 35;
+IO_PORT "mco" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_LOC "res_n" 15;
+IO_PORT "res_n" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3;
+IO_LOC "lcd_clk" 11;
+IO_PORT "lcd_clk" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_hsync" 10;
+IO_PORT "lcd_hsync" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_vsync" 46;
+IO_PORT "lcd_vsync" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_de" 5;
+IO_PORT "lcd_de" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[0]" 41;
+IO_PORT "lcd_data[0]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[1]" 42;
+IO_PORT "lcd_data[1]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[2]" 43;
+IO_PORT "lcd_data[2]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[3]" 44;
+IO_PORT "lcd_data[3]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[4]" 45;
+IO_PORT "lcd_data[4]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[5]" 32;
+IO_PORT "lcd_data[5]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[6]" 33;
+IO_PORT "lcd_data[6]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[7]" 34;
+IO_PORT "lcd_data[7]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[8]" 38;
+IO_PORT "lcd_data[8]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[9]" 39;
+IO_PORT "lcd_data[9]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[10]" 40;
+IO_PORT "lcd_data[10]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[11]" 27;
+IO_PORT "lcd_data[11]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[12]" 28;
+IO_PORT "lcd_data[12]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[13]" 29;
+IO_PORT "lcd_data[13]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[14]" 30;
+IO_PORT "lcd_data[14]" IO_TYPE=LVCMOS33;
+IO_LOC "lcd_data[15]" 31;
+IO_PORT "lcd_data[15]" IO_TYPE=LVCMOS33;
+IO_LOC "SNES_CLK" 13;
+IO_PORT "SNES_CLK" IO_TYPE=LVCMOS33;
+IO_LOC "SNES_LATCH" 18;
+IO_PORT "SNES_LATCH" IO_TYPE=LVCMOS33;
+IO_LOC "SNES_DATA" 16;
+IO_PORT "SNES_DATA" IO_TYPE=LVCMOS33;
+IO_LOC "SOUND_OUT" 17;
+IO_PORT "SOUND_OUT" IO_TYPE=LVCMOS33;
+
