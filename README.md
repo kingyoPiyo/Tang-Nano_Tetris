@@ -1,5 +1,5 @@
 # Tang-Nano_Tetris
-Tang-Nano FPGAボードで動作するテトリスゲームを実装してみました。SNESコントローラを接続してプレイすることができます。ソースコードは大変散らかっており、至るところにバグが潜んでいると思われますのでご注意ください（？）
+Tang-Nano FPGAボードで動作するテトリスゲームを実装してみました。SNESコントローラを接続してプレイすることができます。ソースコードは大変散らかっており、至るところにバグが潜んでいると思われますのでご注意ください（？）  
 [![](https://img.youtube.com/vi/Z7nBj0Th6N0/0.jpg)](https://www.youtube.com/watch?v=Z7nBj0Th6N0)  
 
 ## ハードウェア
@@ -34,8 +34,7 @@ Tang-NanoにSNESコントローラと音声出力用のLPFを接続します。
 ![Block_Color](doc/img/block_color.png "Block_Color")
 
 ## テトリミノ
-tetris.vで定義されています。基準となるXY座標（r_block_pos_x, r_block_pos_y）からのオフセットとして定義しています。  
-LCDのスキャン位置信号（i_pos_x, i_pos_y）とオフセットが一致している場合にブロックが描画されます。  
+tetris.vで定義されています。基準となるXY座標（r_block_pos_x, r_block_pos_y）からのオフセットとして定義しています。LCDのスキャン位置信号（i_pos_x, i_pos_y）とオフセットが一致している場合にブロックが描画されます。  
 ![Tetromino](doc/img/Tetromino.png "Tetromino")
 
 ## フィールド情報の管理について
