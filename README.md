@@ -66,10 +66,10 @@ BGMと効果音は加算され、最終的に8bit幅のデータとなります�
 * Bボタン：テトリミノを左回転
 * SELECTボタン：フィールド内の固定されたテトリミノを全てクリア。LINEカウンタをリセットする。
 
-# 開発環境
+## 開発環境
 - IDE : GOWIN FPGA Designer Version1.9.2.02 Beta build(35976)
 
-# Resource Usage Summary:
+## Resource Usage Summary:
 |  Resource  |  Usage |  Utilization  |
 | ---------- | ------ | ------------- |
 |  Logics  |  932/1152  | 80% |
@@ -81,6 +81,6 @@ BGMと効果音は加算され、最終的に8bit幅のデータとなります�
 |  BSRAMs  |  4/4  | 100% |
 
 
-# 参考
+## 参考
 - ExcelでMIDI http://otktake.blogspot.com/2015/01/excelmidi.html
 - SMF(Standard MIDI File)フォーマット解説 http://maruyama.breadfish.jp/tech/smf/
