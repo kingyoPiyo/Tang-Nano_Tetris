@@ -28,7 +28,6 @@ module tetris (
     parameter   INIT_ANGLE = 3'd0;
 
     // wires
-    wire    [8:0]   w_addr_a;
     wire    [3:0]   w_idata_a;
     wire    [3:0]   w_odata_a;
     wire            w_wen_a;
@@ -254,6 +253,7 @@ module tetris (
     always @(posedge i_clk or negedge i_res_n) begin
         if (~i_res_n) begin
             r_uiupdate_cnt <= 24'd0;
+            r_old_btnstate <= 15'd0;
         end else begin
             r_old_btnstate <= i_snes_state;
             if (w_uiupdate) begin
@@ -303,6 +303,7 @@ module tetris (
             r_freset_busy <= 1'b0;
             r_fresetX <= 4'd0;
             r_fresetY <= 5'd0;
+            r_freset_done <= 1'b0;
         end else begin
             if (r_freset_req & ~r_freset_busy && i_vram_addr == 9'd0) begin
                 r_freset_busy <= 1'b1;
@@ -388,6 +389,9 @@ module tetris (
             r_atari_r_l <= 1'b0;
             r_atari_r_l_tmp <= 1'b0;
             r_blocken_sel_ff2_n <= 13'd0;
+            r_blocken_sel_ff_n <= 1'b0;
+            r_vram_addr_ff <= 9'd0;
+            r_vram_addr_ff2 <= 9'd0;
         end else begin
             r_vram_addr_ff[8:0] <= i_vram_addr[8:0];
             r_vram_addr_ff2[8:0] <= r_vram_addr_ff[8:0];
@@ -469,6 +473,7 @@ module tetris (
             r_wreb <= 1'b0;
             r_wreb_old <= 1'b0;
             r_line_remove_pls <= 1'b0;
+            r_ramlat <= 1'b0;
         end else begin
             // 1ライン消去処理実行結果をLCD_Controllerへ通知
             r_wreb_old <= r_wreb;
@@ -545,6 +550,7 @@ module tetris (
             r_block_fix_req <= 1'b0;// 固定要求なし
             r_drop_req <= 1'b0;
             r_drop_done <= 1'b0;
+            r_block_fix_busy_old <= 1'b0;
         end else if (~r_gameover_state) begin
             // 落下要求
             if (w_drop_pls) begin
@@ -605,7 +611,6 @@ module tetris (
         end
     end
     assign w_idata_a[3:0] = r_block_code[3:0];
-    assign w_addr_a[8:0] = r_vram_addr[8:0];
     assign w_wen_a = r_wen;
 
     //==================================================================
@@ -619,6 +624,9 @@ module tetris (
             r_block_fix_req_old <= 1'b0;
             r_block_fix_req_enter <= 1'b0;
             r_gameover_trig <= 1'b0;
+            r_block_code[3:0] <= 4'd2;
+            r_vram_addr <= 9'd0;
+            r_wen <= 1'b0;
         end else begin
             // リクエストエッジ検出
             r_block_fix_req_old <= r_block_fix_req;
