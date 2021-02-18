@@ -7,3 +7,5 @@ impl/pnr/*
 !impl/pnr/*.fs
 impl/synthesize/*
 !impl/synthesize/*.cfg
+impl/gwsynthesis/*
+!impl/gwsynthesis/*.cfg
