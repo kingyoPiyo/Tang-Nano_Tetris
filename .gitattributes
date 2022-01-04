@@ -1,3 +1,4 @@
 doc/* linguist-documentation
 impl/* linguist-documentation
 sim/rtl/ip/* linguist-vendored
+src/ip/* linguist-vendored
